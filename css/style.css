@@ -84,7 +84,7 @@ button:active {
 
 
 
-@media (max-height: 400px) {
+@media (max-height: 500px) {
   body {
     height: 600px;
   }
