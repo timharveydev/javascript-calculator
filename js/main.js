@@ -17,7 +17,7 @@ function calc() {
 
 //if no numbers have been entered, or if letters have been entered; provides an error message
   if (isNaN(calculation)) {
-    calculation = "Please enter two numbers";
+    calculation = "Please enter a number in each of the \"value\" fields";
   }
 
 //writes the result of the calculation to the div with the ID 'result' in the HTML
