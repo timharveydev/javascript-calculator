@@ -1,6 +1,6 @@
 function calc() {
-  var a = parseInt(document.getElementById('value1').value);//stores value 1 from site
-  var b = parseInt(document.getElementById('value2').value);//stores value 2 from site
+  var a = parseFloat(document.getElementById('value1').value);//stores value 1 from site
+  var b = parseFloat(document.getElementById('value2').value);//stores value 2 from site
   var op = document.getElementById('operator').value;//stores chosen operator
   var calculation;//will store result here
 
