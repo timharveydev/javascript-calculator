@@ -11,14 +11,21 @@ body {
   font-size: 1.3rem;
   text-align: center;
   display: flex;
+  flex-direction: column;
   align-items: center;
   box-sizing: border-box;
 }
 
-.container {
+/* contains the calculator */
+.container1 {
   width: 80vw;
   max-width: 250px;
   margin: 0 auto;
+}
+
+/* containes the result and error message */
+.container2 {
+  width: 90vw;
 }
 
 hr {
@@ -30,6 +37,7 @@ form {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 10vh;
 }
 
 input {
@@ -82,10 +90,31 @@ button:active {
   font-size: 2rem;
 }
 
+                              /* Media Queries */
 
-
-@media (max-height: 500px) {
+/* ensures the background colour covers the screen on smaller devices when scrolling down */
+@media (max-height: 600px) {
   body {
-    height: 600px;
+    height: 650px;
+  }
+}
+
+
+/* the following three queries keep the calculator centred on the page for different screen sizes */
+@media (min-height: 750px) {
+  form {
+    margin-top: 15vh;
+  }
+}
+
+@media (min-height: 1000px) {
+  form {
+    margin-top: 20vh;
+  }
+}
+
+@media (min-height: 1200px) {
+  form {
+    margin-top: 28vh;
   }
 }
